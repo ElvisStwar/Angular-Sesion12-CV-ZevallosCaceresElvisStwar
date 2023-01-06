@@ -3,23 +3,23 @@
     <div class="col-4">
         <form [formGroup]="formCv">
             <div class="row g-2">
-                <div class="col-10">
-                    <input id="name" formControlName="name" type="text" class="form-control" placeholder="Cambiar nombre">
+                <div class="col-9">
+                    <input id="name" formControlName="name" type="text" class="form-control" placeholder="Cambiar Nombre">
                 </div>
                 <div class="col">
-                    <button class="btn btn-primary" (click)="ok()">ok</button>
+                    <button class="btn btn-primary" (click)="ok()">Cambiar</button>
                 </div>
-                <div class="col-10">
-                    <input id="curso" formControlName="curso" type="text" class="form-control" placeholder="Agregar Formacion académica">
-                </div>
-                <div class="col">
-                    <button class="btn btn-primary" (click)="ok2()">ok</button>
-                </div>
-                <div class="col-10">
-                    <input id="laboral" formControlName="laboral" type="text" class="form-control" placeholder="Agregar centro de labores">
+                <div class="col-9">
+                    <input id="curso" formControlName="curso" type="text" class="form-control" placeholder="Agregar Formacion Académica">
                 </div>
                 <div class="col">
-                    <button class="btn btn-primary" (click)="ok3()">ok</button>
+                    <button class="btn btn-primary" (click)="ok2()">Agregar</button>
+                </div>
+                <div class="col-9">
+                    <input id="laboral" formControlName="laboral" type="text" class="form-control" placeholder="Agregar Centro de Labores">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" (click)="ok3()">Agregar</button>
                 </div>
             </div>
         </form>
