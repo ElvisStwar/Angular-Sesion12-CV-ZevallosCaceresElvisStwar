@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cursos',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./cursos.component.css']
 })
 export class CursosComponent {
+  
+  @Input() masCursos: any[] = [];
+
+  eliminar(){
+    this.masCursos.pop()
+  }
 
 }

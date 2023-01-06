@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DescripcionComponent } from './descripcion/descripcion.component';
 import { CursosComponent } from './cursos/cursos.component';
+import { LaboralComponent } from './laboral/laboral.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -10,15 +13,20 @@ import { CursosComponent } from './cursos/cursos.component';
   declarations: [
     NavbarComponent,
     DescripcionComponent,
-    CursosComponent
+    CursosComponent,
+    LaboralComponent,
+    ContactoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   exports: [
     NavbarComponent,
     DescripcionComponent,
-    CursosComponent
+    CursosComponent,
+    LaboralComponent,
+    ContactoComponent
   ]
 })
 export class ComponentesModule { }

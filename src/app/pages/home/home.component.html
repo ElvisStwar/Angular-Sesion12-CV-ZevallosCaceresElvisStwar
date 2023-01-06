@@ -1,1 +1,44 @@
-<p>home works!</p>
+<app-navbar [nombre]="newNombre"></app-navbar>
+<div class="row m-4">
+    <div class="col-4">
+        <form [formGroup]="formCv">
+            <div class="row g-2">
+                <div class="col-10">
+                    <input id="name" formControlName="name" type="text" class="form-control" placeholder="Cambiar nombre">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" (click)="ok()">ok</button>
+                </div>
+                <div class="col-10">
+                    <input id="curso" formControlName="curso" type="text" class="form-control" placeholder="Agregar Formacion académica">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" (click)="ok2()">ok</button>
+                </div>
+                <div class="col-10">
+                    <input id="laboral" formControlName="laboral" type="text" class="form-control" placeholder="Agregar centro de labores">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" (click)="ok3()">ok</button>
+                </div>
+            </div>
+        </form>
+        <div class="mt-5">
+            <div class="col border p-4 ">
+                <app-contacto></app-contacto>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="col border p-5">
+            <app-descripcion [nombre]="newNombre"></app-descripcion>
+        </div>
+        <div class="col border p-5">
+            <app-cursos [masCursos]="dataCursos"></app-cursos>
+        </div>
+        <div class="col border p-5">
+            <app-laboral [masLaboral]="dataLaboral"></app-laboral>
+        </div>
+    </div>
+    
+</div>
